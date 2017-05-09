@@ -1,0 +1,26 @@
+<div ng-include="'js/views/navbarTop.html'"></div>
+<div class="container" style="margin-top: 20px">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="col-md-12">
+                <button ng-click="submit()">Buy</button>
+            </div>
+            <div class="col-md-4">
+                <img src="image/logo_shirtparty.png" style="border: 1px solid #EEEEEE;border-radius: 0;width: 100%;height:150px" ng-click="addPrint('image/logo_shirtparty.png')">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div ng-show="isCanvas === true">
+                <button ng-click="flip()">Flip</button>
+                <canvas id="canvasFront" width="530" height="630"></canvas>
+            </div>
+            <div ng-show="isCanvas === false">
+                <button ng-click="flip()">Flip</button>
+                <canvas id="canvasBack" width="530" height="630"></canvas>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div ng-include="'js/views/navbarBottom.html'"></div>

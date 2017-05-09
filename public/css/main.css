@@ -1,0 +1,733 @@
+@font-face {
+    font-family: Muli;
+    src: url(fonts/Muli/Muli-SemiBold.ttf);
+}
+@font-face {
+    font-family: Work_Sans;
+    src: url(fonts/Work_Sans/WorkSans-SemiBold.ttf);
+}
+
+body{
+    background-color: #ffffff;
+    font-family: Muli;
+    font-weight: 100;
+    font-size: 12px;
+    color: black;
+
+}
+/*Navbar Top&Bottom*/
+.navbar{
+    border-radius: 0;
+    border: none;
+    min-height: 100px;
+    margin: 0;
+}
+.container-fluid{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+.navbar-default{
+    background-color: white;
+    background-repeat: no-repeat;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-collapse{
+    border-top: none;
+
+}
+.navbar-brand {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    font-family: Muli;
+
+}
+span.text-brand {
+    color: #1280B2;
+    font-weight: 100;
+    font-size: 18px;
+}
+.navbar-brand>img {
+    width: 80px;
+    height: 80px;
+
+}
+.navbar-toggle{
+    margin-top: 30px;
+}
+.clearfix{
+    height: 50px;
+}
+.search-input-navbar{
+    border: 1px solid #959595;
+    float: right;
+    margin-top: 18px;
+    border-radius: 14px;
+
+    height: 30px;
+    width: 100%;
+    position: relative;
+
+}
+.search-input-navbar input{
+    height: 100%;
+    border-radius: 14px;
+    display: inline;
+    font-size: 10px;
+    font-weight: 100;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+    border: none;
+}
+.search-input-navbar i{
+    line-height: 28px;
+    display: inline;
+    right: 0;
+    margin-right: 10px;
+    position: absolute;
+    z-index: 10px;
+
+
+}
+.search-input-navbar input:focus{
+    outline: none;
+
+}
+
+
+.navbar-bottom{
+    padding-top: 40px;
+    display: table;
+    width: 100%;
+    background-color: #232323;
+    color: #959595;
+    padding-bottom: 20px;
+}
+
+.navbar-bottom img.brand-navbar-bottom{
+    width: 80px;
+    height: 80px;
+}
+.navbar-bottom span.text-brand-navbar-bottom{
+    color: white;
+}
+.navbar-bottom p.description-navbar-bottom{
+    display: inline;
+
+    font-size: 10px;
+    font-weight: 100;
+}
+.navbar-bottom .table{
+    margin-top: 20px;
+}
+.navbar-bottom .table>thead>tr>th{
+    border: none;
+    text-align: center;
+}
+.navbar-bottom .table>tbody>tr>td{
+    border: none;
+    text-align: center;
+}
+.navbar-bottom .list-cricle-logo-navbar-bottom {
+    float: right;
+    margin-top: 30px;
+}
+.navbar-bottom .list-cricle-logo-navbar-bottom button.cricle-logo-navbar-bottom{
+    border: 1px solid #959595;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    font-size: 16px;
+    margin-right: 10px;
+
+}
+
+.navbar-bottom .list-cricle-logo-navbar-bottom button.cricle-logo-navbar-bottom:hover{
+    color: white;
+}
+/*END Navbar Top&Bottom*/
+
+.list-popular{
+    background-color: white;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+.list-popular .header-list-popular{
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.list-popular .header-list-popular nav{
+    position: absolute;
+    float: right;
+    right: 40px;
+}
+.list-popular .header-list-popular nav .pager li>a{
+    color: #777;
+}
+.list-popular .header-list-popular nav .pager li>a.left-list-popular{
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 0px;
+    margin-right: -4px;
+}
+.list-popular .header-list-popular nav .pager li>a.right-list-popular{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 15px;
+}
+.list-popular .header-list-popular h5{
+    text-align: center;
+    margin: 0;
+    line-height: 69px;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+.list-popular .main-list-popular{
+    display: table;
+    padding: 10px 0 10px 0;
+
+}
+
+
+/*Card Shirt*/
+.card-shirt{
+    width: 100%;
+    border: none;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-color: #ffffff;
+}
+.card-shirt .main-card-shirt{
+    position: relative;
+    display: table;
+}
+.card-shirt .main-card-shirt button.add-cart-card-shirt{
+    position: absolute;
+    top:0;
+    right: 0;
+    margin: 10px;
+    border-radius: 100%;
+    background-color: #3DC8F1;
+    border: none;
+    color: white;
+
+}
+.card-shirt .main-card-shirt img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 250px;
+
+
+
+}
+.card-shirt .main-card-shirt h5{
+    text-align: center;
+    font-weight: 100;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.card-shirt .main-card-shirt p{
+    text-align: center;
+    font-weight: 100;
+    font-size: 12px;
+    color: #959595;
+}
+.card-shirt .bottom-card-shirt{
+    border-top: 1px solid #eee;
+    min-height: 30px;
+}
+.card-shirt .bottom-card-shirt p{
+    font-weight: 100;
+    font-size: 12px;
+    float: left;
+    color: #959595;
+    line-height: 45px;
+}
+.card-shirt .bottom-card-shirt .cricle-color{
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    float: right;
+
+    border: none;
+   margin-top: 13px;
+    margin-left: 5px;
+
+}
+/*END Card Shirt*/
+
+.main-homepage{
+    padding: 100px 0;
+    display: block;
+    background-color: #EEEEEE;
+}
+.main-homepage h1{
+    margin: 0;
+    float: right;
+    margin-bottom: 10px;
+    font-weight: 900;
+    color: black;
+
+}
+.main-homepage p{
+    font-weight: 100;
+    font-size: 12px;
+    color: #959595;
+    float: right;
+    margin-bottom: 8px;
+
+
+}
+.main-homepage button{
+    width: 100%;
+    border-radius: 50px;
+    float: right;
+    margin-top: 15px;
+    border: none;
+    color: white;
+    background-color: #3DC8F1;
+    padding: 10px 0;
+}
+
+.list-panel-shop{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 100%;
+
+}
+.list-panel-shop p{
+    color: #a1a1a1;
+}
+.panel{
+    border-radius: 0;
+    background-color: white;
+
+}
+.panel-group .panel{
+    border-radius: 0;
+    margin-bottom: 0px;
+
+}
+.panel-body{
+   background-color: #eee;
+    border: none;
+}
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body{
+    border: none;
+
+}
+.panel-open{
+    border: none;
+}
+.panel-title a.accordion-toggle{
+    text-decoration: none;
+}
+.panel-title a.accordion-toggle i{
+    color: #EEEEEE;
+    font-size: 12px;
+    line-height: 13px;
+}
+
+.panel-title{
+    font-size: 12px;
+}
+.panel-heading{
+    padding: 15px;
+    color: black;
+}
+
+
+
+/*test checkbox*/
+.checkbox-custom, .radio-custom {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.checkbox-custom-label, .radio-custom-label {
+    position: relative;
+    color: black;
+}
+
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
+    content: '';
+
+
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+
+
+.checkbox-custom:checked + .checkbox-custom-label:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+
+
+}
+
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    color: #bbb;
+}
+
+.checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
+    outline: 1px solid #ddd; /* focus style */
+}
+/*test checkbox*/
+
+/*Model View Shirt*/
+
+.modal-shirt{
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border: none;
+    border-radius: 0;
+    display: table;
+    width: 100%;
+
+}
+.modal-shirt .header-model-shirt{
+    padding: 15px;
+    border-bottom: 1px solid #EEEEEE;
+
+}
+.modal-shirt .header-model-shirt h5.name-model-shirt{
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+.modal-shirt .header-model-shirt i{
+    float: right;
+    color: #959595;
+    font-size: 16px;
+}
+
+.modal-shirt .main-modal-shirt{
+    padding: 15px;
+
+
+}
+.modal-shirt .main-modal-shirt .description-modal-shirt{
+    padding: 20px;
+
+}
+.modal-shirt .main-modal-shirt .description-modal-shirt p.creater-modal-shirt{
+    font-size: 10px;
+    font-weight: bolder;
+    padding-left: 5px;
+    text-transform: uppercase;
+    margin: 0;
+
+}
+.modal-shirt .main-modal-shirt .description-modal-shirt h4.name-shirt-modal-shirt{
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 5px 0 10px 0;
+
+}
+.modal-shirt .main-modal-shirt .description-modal-shirt span.star-modal-shirt{
+    color: yellow;
+    margin-bottom: 10px;
+    display: block;
+}
+.modal-shirt .main-modal-shirt .description-modal-shirt p{
+    color: #959595;
+    display: inline;
+}
+.modal-shirt .main-modal-shirt .description-modal-shirt p.subheading-model-shirt{
+    display: block;
+    font-weight: bolder;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.modal-shirt .main-modal-shirt .description-modal-shirt .radio-model-shirt{
+    display: inline;
+
+}
+.modal-shirt .main-modal-shirt .description-modal-shirt .radio-model-shirt .radio-custom-label{
+    margin: 0;
+
+}
+
+.modal-shirt .footer-modal-shirt{
+    border-top: 1px solid #EEEEEE;
+    padding: 15px;
+    display: table;
+    width: 100%;
+}
+
+
+
+
+
+.input-group{
+    background-color: transparent;
+}
+ .input-group-addon{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: #959595;
+    background-color: inherit;
+     font-weight: 100;
+     font-size: 16px;
+     border: 1px solid #EEEEEE;
+     border-right: none;
+     padding: 6px 12px 6px 13px;
+}
+.input-group .form-control{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: none;
+    padding: 6px 12px 6px 0;
+    background-color: #FFFFFF;
+    box-shadow: none;
+
+    border: 1px solid #EEEEEE;
+    border-left: none;
+}
+.input-group .form-control:focus{
+    outline: none;
+
+    border: 1px solid #EEEEEE;
+    border-left: none;
+    z-index: 0;
+    box-shadow: none;
+
+}
+
+
+.btn{
+
+    font-weight: bolder;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 12px;
+
+}
+.btn-default{
+    background-image: none;
+    background-color: white;
+    color: #959595;
+}
+.btn-default:hover{
+    background-color: white;
+    color: #959595;
+}
+
+.btn-primary{
+    background-image: none;
+    background-color: #3DC8F1;
+    border: 1px solid #3DC8F1;
+}
+.btn-primary:hover{
+    background-color: #3DC8F1;
+    border: 1px solid #3DC8F1;
+}
+
+/*Model checkout*/
+.model-checkout{
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border: none;
+    border-radius: 0;
+    display: table;
+    width: 100%;
+}
+.model-checkout .header-model-checkout{
+    border-bottom: 1px solid #EEEEEE;
+    padding: 10px 15px;
+}
+.model-checkout .header-model-checkout h4{
+    margin: 0;
+    display: inline;
+    margin-right: 10px;
+}
+.model-checkout .header-model-checkout p{
+    color: #EEEEEE;
+    display: inline;
+}
+.model-checkout .header-model-checkout p span.stap-active-model-checkout{
+    color: #959595;
+}
+.model-checkout .header-model-checkout i{
+    float: right;
+    color: #959595;
+    font-size: 16px;
+    line-height: 20px;
+}
+.model-checkout .main-model-checkout{
+    width: 100%;
+    display: table;
+}
+.model-checkout .main-model-checkout .description-model-checkout{
+    width: 100%;
+    display: table;
+    padding: 10px 15px;
+    background-color: #FFFFFF;
+
+}
+.model-checkout .main-model-checkout .description-model-checkout h5.stap-model-checkout{
+    color: black;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.model-checkout .main-model-checkout .description-model-checkout .list-model-checkout{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+
+    display: block;
+}
+.model-checkout .main-model-checkout .description-model-checkout .total-price-model-checkout{
+
+    width: 100%;
+
+    display: block;
+}
+.model-checkout .main-model-checkout .description-model-checkout .total-price-model-checkout table{
+    margin-top: 100px;
+    width: 100%;
+    color: #959595;
+}
+.model-checkout .main-model-checkout .description-model-checkout .total-price-model-checkout table thead{
+    border-top: 1px solid #959595;
+    border-bottom: 1px solid #959595 ;
+}
+.model-checkout .main-model-checkout .description-model-checkout .total-price-model-checkout table thead tr th{
+    border: none;
+}
+
+/*END Model checkout*/
+
+
+/*List Shirt*/
+.list-shirt{
+    padding: 10px 0;
+    border-bottom: 1px solid #959595;
+    position: relative;
+}
+.list-shirt img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #959595;
+    border-radius: 0;
+    float: left;
+    margin-left: 15px;
+    display: inline;
+
+}
+.list-shirt .detail-list-shirt{
+    position: absolute;
+    display: inline;
+    top:0;
+    left: 90px;
+
+    width: 70%;
+
+}
+.list-shirt .detail-list-shirt h5.shrit-name-price-list-shirt{
+    color: #959595;
+
+ }
+.list-shirt .detail-list-shirt p{
+    color: #959595;
+
+}
+
+
+/*END List Shirt*/
+
+
+/*Navbar-static-left*/
+.navbar-inverse{
+    background-image: none;
+    background-color: #eeeeee;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: block;
+}
+.navbar-inverse .navbar-brand{
+    text-shadow: none;
+}
+.navbar-fixed-left {
+    width: 140px;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+    float: none;  /* Cancel default li float: left */
+    width: 140px;
+    padding: 10px 0;
+
+}
+
+.navbar-fixed-left .navbar-nav > li  img{
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: auto;
+}
+.navbar-fixed-left .navbar-nav > li  p{
+    text-align: center;
+
+
+}
+.navbar-fixed-left + .container {
+    padding-left: 160px;
+}
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+    margin-top: -50px;
+    margin-left: 140px;
+}
+/*END Navbar-static-left*/
+/*navbar static top*/
+.navbar-top-sell{
+    background-color: #eeeeee;
+    width: 100%;
+    height: 70px;
+    display: block;
+    padding: 0px 15px;
+    margin-left: 140px
+}
+
+
+/*END navbar static top*/
+
+

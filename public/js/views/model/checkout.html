@@ -1,0 +1,63 @@
+<div class="model-checkout">
+    <div class="header-model-checkout">
+        <i ng-click="cancel()" role="button" class="fa fa-times" aria-hidden="true"></i>
+        <h4>Checkout</h4>
+        <p><span class="stap-active-model-checkout">Payment Method</span>  > <span>Shipping</span> > <span>Confirmation</span></p>
+    </div>
+    <div class="main-model-checkout">
+        <div class="row">
+            <div class="col-md-7" style="padding: 0 -15px">
+                <div class="description-model-checkout" >
+                    <h5 class="stap-model-checkout">Wallet</h5>
+                    <button ng-click="submitCheckout()">Submit</button>
+                </div>
+            </div>
+            <div class="col-md-5" style="padding: 0 -15px">
+                <div class="description-model-checkout" style="background-color: #EEEEEE;">
+
+                        <div class="list-shirt" ng-repeat="cart in carts">
+                            <div class="row">
+                                <img src="{{cart.front}}">
+
+                                <div class="detail-list-shirt">
+                                    <h5 style="float: right" class="shrit-name-price-list-shirt">$235</h5>
+                                    <h5 class="shrit-name-price-list-shirt">Shirt Name</h5>
+                                    <p>Black</p>
+                                    <p>Quaritity: 4</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    <div class="total-price-model-checkout">
+                        <table class="table" >
+                            <thead>
+                                <tr>
+                                    <th style="float: left">Subtotal</th>
+                                    <th style="float: right">$398</th>
+                                </tr>
+                                <tr>
+                                    <th style="float: left">Shipping</th>
+                                    <th style="float: right">Free</th>
+                                </tr>
+                                <tr>
+                                    <th style="float: left">Taxes</th>
+                                    <th style="float: right">$12.12</th>
+                                </tr>
+                            </thead>
+                            <tbody >
+                                <tr>
+                                    <td style="float:left;">Total</td>
+                                    <td style="float:right;">$100</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

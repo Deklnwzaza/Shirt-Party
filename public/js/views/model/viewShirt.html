@@ -1,0 +1,83 @@
+<div class="modal-shirt">
+    <div class="main-modal-shirt">
+            <div class="row">
+                <div class="col-md-6">
+                    <div style="width: 100%;">
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="description-modal-shirt">
+                        <p class="creater-modal-shirt">createor name</p>
+                        <h4 class="name-shirt-modal-shirt">t-shirt name</h4>
+                        <span uib-rating ng-init="star=4" ng-model="star" max="5" read-only="true" class="star-modal-shirt"></span>
+                        <p>In by an appetite no humoured return informed. Possession so comparison inquietufr</p>
+
+                        <div class="row" style="padding: 20px 0;border-bottom: 1px solid #EEEEEE">
+                            <div class="col-md-6">
+                                <p class="subheading-model-shirt">Size:</p>
+                                <div class="radio-model-shirt">
+                                    <input id="radio-4" class="radio-custom" name="radio-group" type="radio" checked>
+                                    <label for="radio-4" class="radio-custom-label"></label>
+                                </div>
+                                <div class="radio-model-shirt">
+                                    <input id="radio-5" class="radio-custom"name="radio-group" type="radio">
+                                    <label for="radio-5" class="radio-custom-label"></label>
+                                </div>
+                                <div class="radio-model-shirt">
+                                    <input id="radio-6" class="radio-custom" name="radio-group" type="radio">
+                                    <label for="radio-6" class="radio-custom-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="subheading-model-shirt">Colors:</p>
+                                <div class="radio-model-shirt">
+                                    <input id="radio-1" class="radio-custom" name="radio-group" type="radio" checked>
+                                    <label for="radio-1" class="radio-custom-label" style="margin: 0"></label>
+                                </div>
+                                <div class="radio-model-shirt">
+                                    <input id="radio-2" class="radio-custom"name="radio-group" type="radio">
+                                    <label for="radio-2" class="radio-custom-label" style="margin: 0"></label>
+                                </div>
+                                <div class="radio-model-shirt">
+                                    <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
+                                    <label for="radio-3" class="radio-custom-label" style="margin: 0"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 20px 0;">
+                            <div class="col-md-6">
+                                <p class="subheading-model-shirt">Quantity:</p>
+                                <nav aria-label="Page navigation" >
+                                    <ul class="pagination" style="margin: 0">
+                                        <li>
+                                            <a role="button" aria-label="Previous" ng-click="minus()" style="border-top-left-radius: 15px;border-bottom-left-radius: 15px">
+                                                <i class="fa fa-minus" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li><a>{{countShirt}}</a></li>
+                                        <li>
+                                            <a role="button" aria-label="Next" ng-click="plus()" style="border-top-right-radius: 15px;border-bottom-right-radius: 15px">
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="subheading-model-shirt">Tags:</p>
+                                <p>Footwear, Leather, Low, Sneakers, Suede</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    <div class="footer-modal-shirt">
+        <button class="btn btn-primary" style="float: right;margin-left: 5px" type="button">BUY NOW <i style="margin-left: 5px" class="fa fa-shopping-cart" aria-hidden="true" ></i></button>
+        <button class="btn btn-default" style="float: right;"  type="button">WISHLIST <i style="margin-left: 5px" class="fa fa-heart" aria-hidden="true"></i></button>
+    </div>
+
+</div>

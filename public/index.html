@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShirtParty</title>
+
+    <script src="library/angular-1.6.4/angular.min.js"></script>
+    <script src="library/angular-1.6.4/angular-route.min.js"></script>
+    <script src="library/ngstorage/ngStorage.min.js"></script>
+    
+    <!--Bootstrap-->
+    <link href="library/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="library/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--ui-bootstrap-->
+    <script src="library/ui-bootstrap-tpls-2.5.0.min.js"></script>
+    <!--Angularjs Slider-->
+    <script src="library/angularjs-slider/dist/rzslider.min.js"></script>
+    <link href="library/angularjs-slider/dist/rzslider.css" rel="stylesheet">
+    <!--Fabric-->
+    <script src="library/fabric.js"></script>
+    <!--File saver-->
+    <script src="library/file-saver/FileSaver.min.js"></script>
+    <script src="library/Blob.js"></script>
+    <script src="library/canvas-toBlob.js"></script>
+    <!--ngUploadFile-->
+    <script src="library/ng-file-upload/ng-file-upload.min.js"></script>
+    <!--Firebase Javascript-->
+    <script src="library/firebase.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+    <script>
+        //init firebase
+        var config = {
+            apiKey: "AIzaSyDePBG4NfCkiZ5yc4Dv1BiEsUklNIbC9_Y",
+            authDomain: "shirt-party.firebaseapp.com",
+            databaseURL: "https://shirt-party.firebaseio.com",
+            projectId: "shirt-party",
+            storageBucket: "shirt-party.appspot.com",
+            messagingSenderId: "781795732832"
+        };
+        firebase.initializeApp(config);
+    </script>
+    
+</head>
+<body ng-app="ShirtParty">
+
+<div ng-view></div>
+
+
+<!--Jquery-->
+<script src="library/jquery/jquery.min.js"></script>
+<!--Bootstrap-->
+<script src="library/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+<script src="js/app.js"></script>
+<script src="js/controllers/homeController.js"></script>
+<script src="js/controllers/shopController.js"></script>
+<script src="js/controllers/createController.js"></script>
+<script src="js/controllers/sellController.js"></script>
+</body>
+
+</html>

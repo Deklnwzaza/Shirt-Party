@@ -1,0 +1,92 @@
+<div class="modal-shirt">
+    <div class="header-model-shirt">
+        <i ng-click="cancel()" role="button" class="fa fa-times" aria-hidden="true"></i>
+        <h5 class="name-model-shirt" ng-show="isFormLogin">Login</h5>
+        <h5 class="name-model-shirt" ng-show="isFormRegister">Register</h5>
+    </div>
+    <div class="main-modal-shirt">
+        <div class="description-modal-shirt">
+            <div ng-show="isFormLogin">
+                <div class="row">
+                    <div class="col-md-12" style="margin-bottom: 15px">
+                        <div class="input-group">
+                            <span class="input-group-addon" ><i class="fa fa-globe" aria-hidden="true"></i></span>
+                            <input type="email" id="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="margin-bottom: 15px">
+                        <div class="input-group">
+                            <span class="input-group-addon" ><i class="fa fa-lock" aria-hidden="true"></i></span>
+                            <input type="password" id="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="margin-bottom: 15px">
+                        <button class="btn btn-primary" style="text-transform: uppercase;width: 100%" ng-click="loginEmail()">login</button>
+                    </div>
+                    <div class="col-md-6" style="margin-bottom: 15px">
+                        <button class="btn btn-default" style="text-transform: uppercase;width: 100%">forgot password</button>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="subheading-model-shirt" style="text-align: center">New here? <a role="button" ng-click="changeForm('register')" style="color: #0db9f0;margin-left: 5px">Register now</a></p>
+                    </div>
+                </div>
+            </div>
+            <div ng-show="isFormRegister">
+                <div class="row">
+                    <div class="col-md-12" style="margin-bottom: 15px">
+                        <div class="input-group">
+                            <span class="input-group-addon" ><i class="fa fa-globe" aria-hidden="true"></i></span>
+                            <input type="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="margin-bottom: 15px">
+                        <div class="input-group">
+                            <span class="input-group-addon" ><i class="fa fa-lock" aria-hidden="true"></i></span>
+                            <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="margin-bottom: 15px">
+                        <div class="input-group">
+                            <span class="input-group-addon" ><i class="fa fa-lock" aria-hidden="true"></i></span>
+                            <input type="password" class="form-control" placeholder="Confirm Password" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="margin-bottom: 15px">
+                        <div class="input-group">
+                            <span class="input-group-addon" ><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="First name" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="margin-bottom: 15px">
+                        <div class="input-group">
+                            <span class="input-group-addon" ><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Last name" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="footer-modal-shirt">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <button class="btn btn-primary" style="width: 100%;margin: 5px 0;background-color: #3A5695;border: 1px solid #3A5695">Facebook <i class="fa fa-facebook-official" aria-hidden="true" style="color: white;margin-left: 10px"></i></button>
+
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-primary" style="width: 100%;margin: 5px 0;background-color: #55ACEE;border: 1px solid #55ACEE">Twitter <i class="fa fa fa-twitter" aria-hidden="true" style="color: white;margin-left: 10px"></i></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

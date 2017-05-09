@@ -1,0 +1,24 @@
+<div ng-include="'js/views/navbarTop.html'"></div>
+<div ng-include="'js/views/main-homepage.html'"></div>
+
+<div ng-include="'js/views/popular.html'"></div>
+
+
+
+
+
+    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+        <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+            <img src="image/background_white.png" style="width: 100%;height: 305px">
+            <div class="carousel-caption">
+                <img ng-src="{{slide.image}}" style="width: 120px;height: 120px;border-radius: 100%;border: 2px solid #c0c0c0;margin-bottom: 15px">
+                <p style="margin-bottom: 15px;color: #959595;text-shadow: none">{{slide.description_page}}  <a  role="button" ng-href="{{slide.path}}">{{slide.name_page}}</a></p>
+                <p style="margin-bottom: 15px; color: black;text-shadow: none">{{slide.text}}</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div ng-include="'js/views/navbarBottom.html'"></div>
