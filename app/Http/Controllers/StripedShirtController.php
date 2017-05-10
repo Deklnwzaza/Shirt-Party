@@ -22,7 +22,7 @@ class StripedShirtController extends Controller
                 'buyer_name' => $events['buyer_name'],
                 'front' => $events['image'][$i]['front'],
                 'back' => $events['image'][$i]['back'],
-                'sticker' => $events['sticker'],
+                'sticker' => $events['image'][$i]['sticker'],
             ];
             StripedShirt::create($arrData[$i]);
         }
