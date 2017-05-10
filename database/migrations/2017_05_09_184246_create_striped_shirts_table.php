@@ -16,8 +16,8 @@ class CreateStripedShirtsTable extends Migration
         Schema::create('striped_shirts', function (Blueprint $table) {
             $table->increments('id');
             $table->string('buyer_name');
-            $table->binary('front');
-            $table->binary('back');
+            $table->longText('front');
+            $table->longText('back');
             $table->integer('sticker');
             $table->timestamps();
         });

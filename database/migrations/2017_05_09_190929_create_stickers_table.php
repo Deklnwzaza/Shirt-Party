@@ -16,7 +16,7 @@ class CreateStickersTable extends Migration
         Schema::create('stickers', function (Blueprint $table) {
         $table->increments('id');
         $table->string('create_by');
-        $table->binary('image');
+        $table->longText('image');
         $table->timestamps();
          });
     }
