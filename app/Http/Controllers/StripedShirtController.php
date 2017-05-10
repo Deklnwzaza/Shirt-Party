@@ -16,6 +16,7 @@ class StripedShirtController extends Controller
     public function createShirt(Request $request)
     {
         $events = $request->all();
+        Log::info($events);
         $arrData = [];
         foreach ($events as $event){
             $arrData = [
