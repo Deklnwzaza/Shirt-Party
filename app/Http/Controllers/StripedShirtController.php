@@ -17,15 +17,21 @@ class StripedShirtController extends Controller
     {
         $events = $request->all();
         $arrData = [];
-        for($i = 0; i < count($events['image']); ++$i){
-            $arrData[$i] = [
+        for($i = 0; i < count($events['image']); $i++){
+            $arrData = [
                 'buyer_name' => $events['buyer_name'],
                 'front' => $events['image'][$i]['front'],
                 'back' => $events['image'][$i]['back'],
                 'sticker' => $events['image'][$i]['sticker'],
             ];
-            StripedShirt::create($arrData[$i]);
+            StripedShirt::create($arrData);
         }
+        /*$arrData = [
+            'buyer_name' => $events['buyer_name'],
+            'front' => $events['front'],
+            'back' => $events['back'],
+            'sticker' => $events['sticker'],
+        ];*/
         return $arrData;
     }
 
