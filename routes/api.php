@@ -17,18 +17,18 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('user/create', ['middleware' => 'cors', 'UserController@createUser']);
+Route::post('user/create', 'UserController@createUser');
 
-Route::post('user/login',  ['middleware' => 'cors', 'UserAuthController@loginUser']);
+Route::post('user/login', 'UserAuthController@loginUser');
 
-Route::post('shirt/create',  ['middleware' => 'cors', 'StripedShirtController@createShirt']);
+Route::post('shirt/create', 'StripedShirtController@createShirt');
 
-Route::post('sticker/create',  ['middleware' => 'cors', 'StickerController@createSticker']);
+Route::post('sticker/create', 'StickerController@createSticker');
 
-Route::get('shirt/all',  ['middleware' => 'cors', 'StripedShirtController@getAllShirt']);
+Route::get('shirt/all', 'StripedShirtController@getAllShirt');
 
-Route::get('shirt/{id}', ['middleware' => 'cors', 'StripedShirtController@getShirt']);
+Route::get('shirt/{id}', 'StripedShirtController@getShirt');
 
-Route::get('sticker/all',  ['middleware' => 'cors', 'StickerController@getAllSticker']);
+Route::get('sticker/all', 'StickerController@getAllSticker');
 
-Route::get('sticker/{id}',  ['middleware' => 'cors', 'StickerController@getSticker']);
+Route::get('sticker/{id}', 'StickerController@getSticker');
