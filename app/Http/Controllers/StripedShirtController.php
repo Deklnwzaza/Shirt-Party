@@ -16,9 +16,8 @@ class StripedShirtController extends Controller
     public function createShirt(Request $request)
     {
         $events = $request->all();
-        Log::info($events);
         $arrData = [];
-        foreach ($events as $event){
+        foreach ($events['image'] as $event){
             $arrData = [
            'buyer_name' => $events['buyer_name'],
            'front' => $event['front'],
@@ -39,6 +38,7 @@ class StripedShirtController extends Controller
     public function getAllShirt()
     {
         $shirts = StripedShirt::all();
+
         return $shirts;
     }
 
